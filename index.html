@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="start-screen" class="screen">
+        <div class="one">
+            <h1>Welcome to the Memory Card Game!</h1> <br>
+            <h2>Match the pairs of cards to win.</h2> <br>
+            <h3>How to Play the Game</h3> <br> <br>
+            <div class="text_dir">
+            <ol >
+            <li>There are pairs of cards with hidden emojis.</li> 
+            <li>Your goal is to match the pairs by flipping two cards at a time.</li> 
+            <li>If two flipped cards match, they stay face up. </li>
+            <li>If the cards don't match, they will flip back.</li>
+            <li>Try to match all the pairs with as few moves as possible!</li>
+            </ol>
+            </div>
+            <button id="start-btn">Start Game</button>
+        </div>
+        
+    </div>
+
+    <div id="game-screen" class="screen">
+        <h2>Memory Card Game</h2>
+        <div id="game-board" class="game-board"></div>
+        <p>Score: <span id="score">0</span></p>
+    </div>
+
+    <div id="end-screen" class="screen">
+        <h2>Game Over!</h2>
+        <p>Your Score: <span id="final-score"></span></p>
+        <button id="play-again-btn">Play Again</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
